@@ -1,0 +1,8 @@
+for i = 1, 20 do 
+    local codes = {"EpicReward500", "MillionWarriors", "FrostGems10", "Musclestorm50", "SpaceGems50", "MegaLift50", "Speedy50", "SkyAgility50", "GalaxyCrystal50", "SuperMuscle100", "SuperPunch100", "Launch250"}
+  
+    for _, code in ipairs(codes) do
+ 
+    game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("codeRemote"):InvokeServer(code)
+    end
+end
